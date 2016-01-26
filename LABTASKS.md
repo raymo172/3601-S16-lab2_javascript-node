@@ -11,23 +11,27 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-> Your Answer Here!
+> Takes input from the client and sends the client to the correct webpage on request. Also handles things such as root directory for the website and where to find variables. When going to the kittens page it simply says the page is under construction. Petform redirects the user to a form with a field to enter a new pet name. Submitting a form sends the server a message with the submitted text and prints out the text along with the length of the string. A route is... a route? It's like an internet rode. It specifies where to send the user.
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+> It contains the home page (index.html), the about page (about.html), and the petForm page with the submissible form. They are referenced with a singular slash in front signifying they are in the parent directory, followed by their name.
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+> We simply changed the text, restarted the server, and refreshed the webpage. It worked great. There were many happy kittens.
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
+> Same idea as the kittens page. We simply changed the text, restarted the server, and refreshed the webpage.
 
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
+> Upon submitting a form, the server console prints the submitted string and tells the client to display the string along with its length.
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
+> It is defined in clientJavaScript.js and clientJavaScript.spec.js and is referenced in index.html.
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
+> It's defined in serverJavascript.js and used in both app.js and karma.conf.js.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 

@@ -29,3 +29,12 @@ var returnKittens = function(){
     return "kittens";
 };
 
+/**
+ * Takes no arguments, returns the string "kittens"
+ *
+ * @returns {string}  - returns "kittens"
+ */
+var returnNotKittens = function(){
+        return "Not Kittens!";
+    };
+
