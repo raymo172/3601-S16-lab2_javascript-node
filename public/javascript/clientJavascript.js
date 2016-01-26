@@ -38,3 +38,11 @@ var returnNotKittens = function(){
         return "Not Kittens!";
     };
 
+/**
+ * Takes two ints, returns their product.
+ *
+ * @returns {int}  - returns the two numbers multiplied together.
+ */
+var mult = function(x, y){
+    return x * y;
+}
