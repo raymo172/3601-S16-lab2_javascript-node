@@ -34,18 +34,23 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 > It's defined in serverJavascript.js and used in both app.js and karma.conf.js.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
+> We're pretty sure it talks about required versions of dependencies and information about packaged contents.
 
 #####What's in .gitgnore file? What's the purpose of it?
+> The .gitignore file contains the paths/names of files which should never be committed/pushed to git. It's got the files that WebStorm makes.
 
 ## Part #2: exploring testing
 
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
 #####After having set up Travis CI with your forked project, play around the page for your project (build history, settings, branches, etc) and describe at least 3 features you think would be useful when troubleshooting a broken project.
+> Well... we did things out of order. But using Travis to see older versions of the project and track WHERE the project started breaking would be very useful. Plus you can do so with multiple branches, and keep track of which branches have the least issues. Your collaborators can also be tracked.
 
 #####What was the build status of your project right after you got everything set up? Use Travis to find any problems, and describe what failed, if anything. (Which files, what lines, why did failure occur, etc.)
+> It was borked. There was a single test expecting a different string than it was actually receiving.
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
+> We added another (almost identical) function that returned the desired test string.
 
 - Study jasmine testing syntax. Think of a Javascript function, describe its behavior by writing tests for it (this is test-driven development, or TDD). Add the function, run the tests. (Actually do this. Don't forget to commit your changes!)
 
