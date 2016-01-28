@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="javascript/clientJavascript.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+<h3> Beta GPA Calculator </h3>
+
+    <form method="post" action="/GPA" name="GPAForm">
+
+        <datalist id="letterGrades">
+            <option value="A">
+            <option value="A-">
+            <option value="B+">
+            <option value="B">
+            <option value="B-">
+            <option value="C+">
+            <option value="C">
+            <option value="C-">
+            <option value="D+">
+            <option value="D">
+            <option value="F">
+        </datalist>
+
+        <p> Class 1 </p>
+        <input list="letterGrades" name="letterGrade1" placeholder="Grade"/>
+        <input type="number" min="1" step="1" max="5" placeholder="Credits" size="10" name="credit1"/>
+        <p> Class 2 </p>
+        <input list="letterGrades" name="letterGrade2" placeholder="Grade"/>
+        <input type="number" min="1" step="1" max="5" placeholder="Credits" size="10" name="credit2"/>
+        <p> Class 3 </p>
+        <input list="letterGrades" name="letterGrade3" placeholder="Grade"/>
+        <input type="number" min="1" step="1" max="5" placeholder="Credits" size="10" name="credit3"/>
+
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

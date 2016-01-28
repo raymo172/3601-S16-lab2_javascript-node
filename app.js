@@ -46,9 +46,18 @@ app.get('/petForm', function(req, res){
     //console.log(req.query["newPet"]);
 });
 
+app.get('/GPA', function(req, res){
+    res.sendFile('GPA.html', options);
+});
+
 app.post('/petForm', function(req, res){
     res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet) + "\n" + tools.maths(5, 5));
     console.log(req.body.newPet);
+});
+
+app.post('/GPA', function(req, res){
+    res.send("Your GPA is " + tools.calcGPA(req) + ".");
+    console.log("Your GPA is " + tools.calcGPA(req) + ".");
 });
 
 app.get('/', function(req, res){

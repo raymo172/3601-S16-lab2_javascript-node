@@ -24,3 +24,8 @@ describe('testing basic functions', function(){
 
 });
 
+describe('Testing conversion to number grades.', function(){
+    it('should return 4', function(){
+        expect(getNumValue("A")).toEqual(4);
+    });
+});
